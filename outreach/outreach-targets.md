@@ -33,3 +33,20 @@ Thanks,
 Ricky
 
 ## Search candidates not yet verified
+
+
+## Owned free links added/imported
+- https://cursorstarterguide.site/claude-pairing.html → https://firstweekwithclaude.com/how-to-use-claude-code-for-beginners.html (`First Week With Claude — how to use Claude Code for beginners`)
+- https://www.cursorstarterguide.site/claude-pairing.html → https://firstweekwithclaude.com/how-to-use-claude-code-for-beginners.html (`First Week With Claude — how to use Claude Code for beginners`)
+- https://mrenterprises.fyi/ → https://firstweekwithclaude.com (`Open site ↗
+  
+  
+    firstweekwithclaude.com
+    First Week With Claude
+    Beginner Claude coding guide + prompt libra`)
+- https://www.mrenterprises.fyi/ → https://firstweekwithclaude.com (`Open site ↗
+  
+  
+    firstweekwithclaude.com
+    First Week With Claude
+    Beginner Claude coding guide + prompt libra`)
