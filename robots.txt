@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /site.webmanifest
+
+Sitemap: https://firstweekwithclaude.com/sitemap.xml

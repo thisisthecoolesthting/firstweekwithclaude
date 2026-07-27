@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WWG8VK531"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-4WWG8VK531");
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude Coding Reference Manual for Beginners</title>
+  <meta name="description" content="A practical reference manual covering Claude coding prompts, workflows, setup, debugging, safety, project memory, and troubleshooting.">
+  
+  <link rel="canonical" href="https://firstweekwithclaude.com/reference-manual.html">
+  <link rel="icon" href="/assets/media/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/media/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="First Week With Claude">
+  <meta property="og:title" content="Claude Coding Reference Manual for Beginners">
+  <meta property="og:description" content="A practical reference manual covering Claude coding prompts, workflows, setup, debugging, safety, project memory, and troubleshooting.">
+  <meta property="og:image" content="https://firstweekwithclaude.com/assets/media/og-home.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#171512">
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="First Week With Claude home">
+        <img src="/assets/media/logo.svg" width="44" height="44" alt="First Week With Claude" decoding="async">
+        <span><strong>First Week With Claude</strong><small>Independent Claude coding guide</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-nav>
+        <a href="/">Home</a>
+<a href="/start-free-week.html">Start Free Week</a>
+<a href="/first-week-checklist.html">Checklist</a>
+<a href="/claude-code-for-beginners.html">Beginner Guide</a>
+<a href="/reference-manual.html">Reference Manual</a>
+<a href="/prompt-library.html">Prompt Library</a>
+<a href="/faq.html">FAQ</a>
+      </nav>
+      <a class="button small primary" href="https://claude.ai/referral/A-PYPUgv_g?s=cowork&v=apps" target="_blank" rel="sponsored nofollow noopener noreferrer">Open Claude referral<span aria-hidden="true"> ↗</span></a>
+    </div>
+  </header>
+  <main id="main">
+    
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumbs"><a href="/">Home</a> / Reference manual</div>
+    <span class="eyebrow">Reference manual</span>
+    <h1>The practical Claude coding manual.</h1>
+    <p class="lede">A long-form, SEO-friendly reference for beginners who want Claude to help them learn, code, debug, review, and ship small projects.</p>
+    <div class="cta-row"><a class="button primary" href="https://claude.ai/referral/A-PYPUgv_g?s=cowork&v=apps" target="_blank" rel="sponsored nofollow noopener noreferrer">Open Claude referral<span aria-hidden="true"> ↗</span></a><a class="button secondary" href="/prompt-library.html">Prompt library</a></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container content-wrap">
+    <aside class="toc"><strong>Manual sections</strong><a href="#overview">Overview</a><a href="#setup">Setup</a><a href="#prompting">Prompting</a><a href="#workflows">Workflows</a><a href="#memory">Project memory</a><a href="#review">Review and safety</a><a href="#troubleshooting">Troubleshooting</a><a href="#glossary">Glossary</a><a href="#sources">Sources</a></aside>
+    <article class="content">
+      <h2 id="overview">1. Overview: what Claude is useful for</h2>
+      <p>Claude is most useful when you treat it as a collaborator rather than a vending machine for code. It can explain unfamiliar code, draft a small implementation, help reason through bugs, compare approaches, write tests, and review your changes. Your job is to keep the task clear, verify the output, and learn from the explanation.</p>
+      <p>Claude Code is the more developer-focused workflow. Depending on your setup, it can work in a terminal or editor environment, inspect project context, propose edits, and help with build/test cycles. Use it carefully at first: small tasks, frequent reviews, and clean backups.</p>
+
+      <h2 id="setup">2. Setup checklist</h2>
+      <ul class="checklist">
+        <li>Create or open a Claude account using the referral link if you want to use the promotion.</li>
+        <li>Check the official signup page for current offer, plan, billing, and cancellation terms.</li>
+        <li>Create a practice project folder before using Claude on important code.</li>
+        <li>Install a code editor such as VS Code if you want a beginner-friendly visual workspace.</li>
+        <li>Use Git or copy backups before allowing broad file changes.</li>
+      </ul>
+      <div class="callout"><strong>Beginner rule:</strong> never ask an AI coding tool to change a project you cannot restore. Use version control, duplicate the folder, or start with a sample project.</div>
+
+      <h2 id="prompting">3. The prompt formula</h2>
+      <p>Good coding prompts usually include six parts: goal, current context, constraints, exact files, what you already tried, and desired output format.</p>
+      <pre><code>Goal: Build a simple task tracker.
+Context: I am new to JavaScript and have index.html, styles.css, and app.js.
+Constraints: Use plain HTML/CSS/JS. No frameworks.
+Files: I will paste app.js below.
+Tried: The Add button does nothing.
+Output: First explain the likely issue, then give the smallest code change.</code></pre>
+      <h3>Prompt patterns</h3>
+      <div class="grid grid-2">
+        <div class="card"><h3>Plan-first</h3><p>“Before writing code, list the smallest steps and ask any blocking questions.”</p></div>
+        <div class="card"><h3>Diff-first</h3><p>“Show only the lines to change, then explain why.”</p></div>
+        <div class="card"><h3>Tutor mode</h3><p>“Explain this like I know variables and functions, but not promises.”</p></div>
+        <div class="card"><h3>Bug hunt</h3><p>“Give three likely causes ranked by probability, then a test for each.”</p></div>
+      </div>
+
+      <h2 id="workflows">4. Core workflows</h2>
+      <h3>Build a feature</h3>
+      <ol><li>Describe the user-visible outcome.</li><li>Ask for a brief plan and affected files.</li><li>Approve one small chunk.</li><li>Run the app/tests.</li><li>Paste errors and repeat.</li></ol>
+      <h3>Fix a bug</h3>
+      <ol><li>Paste the exact error and steps to reproduce.</li><li>Ask Claude to explain likely causes before changing code.</li><li>Apply the smallest fix.</li><li>Ask for a regression test or manual test checklist.</li></ol>
+      <h3>Learn a codebase</h3>
+      <ol><li>Ask for a file tree explanation.</li><li>Ask where a feature probably lives.</li><li>Ask for data flow in plain English.</li><li>Ask for a “first safe change” recommendation.</li></ol>
+
+      <h2 id="memory">5. Project memory and reusable rules</h2>
+      <p>For repeated project instructions, keep a project notes file. Claude Code workflows often use persistent instruction files such as <code>CLAUDE.md</code> to tell Claude project conventions, build commands, architecture notes, and repeated preferences. Keep those notes short, factual, and easy to audit.</p>
+      <pre><code># Project instructions
+- Use plain JavaScript unless I ask for a framework.
+- Run npm test before final answers when tests exist.
+- Explain new concepts in beginner language.
+- Ask before changing more than three files.</code></pre>
+
+      <h2 id="review">6. Review, privacy, and safety</h2>
+      <p>Claude can help you move quickly, but you are responsible for what you publish. Review code, avoid sharing secrets, remove API keys from prompts, and do not paste private customer data into tools unless your policies allow it. Ask Claude to flag security concerns, but do not treat that as a complete security audit.</p>
+      <ul><li>Use environment variables for secrets.</li><li>Review dependencies before installing them.</li><li>Ask what files changed and why.</li><li>Ask for rollback steps before risky changes.</li><li>Keep important data backed up.</li></ul>
+
+      <h2 id="troubleshooting">7. Troubleshooting prompts</h2>
+      <div class="grid grid-2">
+        <div class="card"><h3>“It does not work”</h3><p>Replace this with exact behavior, expected behavior, console errors, file names, and steps to reproduce.</p></div>
+        <div class="card"><h3>Too much code changed</h3><p>Ask Claude to revert the plan and propose the smallest diff touching one file.</p></div>
+        <div class="card"><h3>You do not understand the fix</h3><p>Ask for an explanation using a tiny analogy and a line-by-line walkthrough.</p></div>
+        <div class="card"><h3>The app broke again</h3><p>Ask for a regression test or a repeatable manual test checklist.</p></div>
+      </div>
+
+      <h2 id="glossary">8. Beginner glossary</h2>
+      <div class="table-wrap"><table class="table"><thead><tr><th>Term</th><th>Meaning</th></tr></thead><tbody><tr><td>Prompt</td><td>The instruction or question you send to Claude.</td></tr><tr><td>Diff</td><td>A view showing what changed in a file.</td></tr><tr><td>Repository</td><td>A project folder tracked with Git.</td></tr><tr><td>CLI</td><td>Command-line interface: a terminal-based way to run tools.</td></tr><tr><td>Refactor</td><td>Improve code structure without changing what users see.</td></tr><tr><td>Regression</td><td>A bug that returns after a change.</td></tr></tbody></table></div>
+
+      <h2 id="sources">9. Accuracy and official sources</h2>
+      <p>This independent manual summarizes public Claude and Claude Code information and points readers back to official pages for details that can change, including pricing, plan access, install steps, and product features.</p>
+      <ul>
+        <li><a href="https://code.claude.com/docs/en/overview" rel="noopener noreferrer">Official Claude Code overview</a></li>
+        <li><a href="https://code.claude.com/docs/en/quickstart" rel="noopener noreferrer">Official Claude Code quickstart</a></li>
+        <li><a href="https://code.claude.com/docs/en/ide-integrations" rel="noopener noreferrer">Official VS Code integration docs</a></li>
+        <li><a href="https://support.claude.com/en/articles/11049762-choose-a-claude-plan" rel="noopener noreferrer">Official Claude plan guide</a></li>
+      </ul>
+      <div class="cta-row"><a class="button primary" href="https://claude.ai/referral/A-PYPUgv_g?s=cowork&v=apps" target="_blank" rel="sponsored nofollow noopener noreferrer">Start the first week<span aria-hidden="true"> ↗</span></a><a class="button secondary" href="/faq.html">Read FAQ</a></div>
+    </article>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="/">
+          <img src="/assets/media/logo.svg" width="40" height="40" alt="First Week With Claude" decoding="async">
+          <span><strong>First Week With Claude</strong><small>A practical, independent 7-day coding sprint for new builders.</small></span>
+        </a>
+        <p class="muted">Independent educational site. Claude and Anthropic are trademarks of Anthropic, PBC. This site is not affiliated with, endorsed by, or sponsored by Anthropic.</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Site</h2>
+        <div class="footer-links"><a href="/pricing-and-plans.html">Plans</a>
+<a href="/first-week-checklist.html">Checklist</a>
+<a href="/first-week-pitfalls.html">Pitfalls</a>
+<a href="/resources.html">Sources</a>
+<a href="/marketing-kit.html">Marketing Kit</a>
+<a href="/disclosure.html">Affiliate Disclosure</a>
+<a href="/privacy.html">Privacy</a>
+<a href="/terms.html">Terms</a></div>
+      </div>
+      <div>
+        <h2 class="footer-heading">Referral note</h2>
+        <p class="muted">Some links are sponsored/referral links. Offer availability, plan pricing, billing, cancellation, and eligibility are controlled by Claude/Anthropic and can change.</p>
+        <a class="button secondary" href="https://claude.ai/referral/A-PYPUgv_g?s=cowork&v=apps" target="_blank" rel="sponsored nofollow noopener noreferrer">Try the referral link<span aria-hidden="true"> ↗</span></a>
+      </div>
+    </div>
+    <div class="container fineprint">© <span data-year>2026</span> First Week With Claude. Last content review: July 27, 2026.</div>
+  </footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

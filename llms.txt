@@ -1,0 +1,15 @@
+# First Week With Claude
+
+A practical, independent 7-day coding sprint for new builders.
+
+This independent site helps new coders use Claude for a focused 7-day coding sprint. It includes a referral CTA, beginner guide, reference manual, prompt library, FAQ, pricing notes, and official-source links.
+
+Important: This site is not affiliated with Anthropic. Referral/free-week offers are controlled by Claude/Anthropic and must be verified on the official signup page.
+
+Key pages:
+- /start-free-week.html
+- /claude-code-for-beginners.html
+- /reference-manual.html
+- /prompt-library.html
+- /faq.html
+- /resources.html

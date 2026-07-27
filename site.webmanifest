@@ -1,0 +1,21 @@
+{
+  "name": "First Week With Claude",
+  "short_name": "Claude Week",
+  "description": "A practical, independent 7-day coding sprint for new builders.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf2",
+  "theme_color": "#171512",
+  "icons": [
+    {
+      "src": "/assets/media/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/media/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

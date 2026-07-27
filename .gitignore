@@ -1,0 +1,4 @@
+﻿# Local / deploy noise
+*.bak
+.DS_Store
+Thumbs.db

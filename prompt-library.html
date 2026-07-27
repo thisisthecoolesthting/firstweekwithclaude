@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WWG8VK531"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-4WWG8VK531");
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude Coding Prompt Library — Copy-Ready Prompts</title>
+  <meta name="description" content="A 40+ prompt library for Claude coding: beginner projects, debugging, refactoring, reviews, READMEs, accessibility, launch checklists, plus community-submitted prompts across 6 categories.">
+  
+  <link rel="canonical" href="https://firstweekwithclaude.com/prompt-library.html">
+  <link rel="icon" href="/assets/media/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/media/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="First Week With Claude">
+  <meta property="og:title" content="Claude Coding Prompt Library — Copy-Ready Prompts">
+  <meta property="og:description" content="A 40+ prompt library for Claude coding: beginner projects, debugging, refactoring, reviews, READMEs, accessibility, launch checklists, plus community-submitted prompts across 6 categories.">
+  <meta property="og:image" content="https://firstweekwithclaude.com/assets/media/og-home.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#171512">
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="First Week With Claude home">
+        <img src="/assets/media/logo.svg" width="44" height="44" alt="First Week With Claude" decoding="async">
+        <span><strong>First Week With Claude</strong><small>Independent Claude coding guide</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-nav>
+        <a href="/">Home</a>
+<a href="/start-free-week.html">Start Free Week</a>
+<a href="/first-week-checklist.html">Checklist</a>
+<a href="/claude-code-for-beginners.html">Beginner Guide</a>
+<a href="/reference-manual.html">Reference Manual</a>
+<a href="/prompt-library.html">Prompt Library</a>
+<a href="/faq.html">FAQ</a>
+      </nav>
+      <a class="button small primary" href="https://claude.ai/referral/A-PYPUgv_g?s=cowork&v=apps" target="_blank" rel="sponsored nofollow noopener noreferrer">Open Claude referral<span aria-hidden="true"> ↗</span></a>
+    </div>
+  </header>
+  <main id="main">
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumbs"><a href="/">Home</a> / Prompt library</div>
+    <span class="eyebrow">Copy-ready prompts</span>
+    <h1>Claude coding prompts for new builders.</h1>
+    <p class="lede">40+ curated prompts across 6 categories, plus community submissions. Use these to plan, code, debug, refactor, review, and learn without getting overwhelmed.</p>
+    <div class="cta-row"><a class="button primary" href="https://claude.ai/referral/A-PYPUgv_g?s=cowork&v=apps" target="_blank" rel="sponsored nofollow noopener noreferrer">Open Claude and paste a prompt<span aria-hidden="true"> ↗</span></a><a class="button secondary" href="/start-free-week.html">Follow the 7-day sprint</a></div>
+  </div>
+</section>
+
+<section class="section tight" aria-label="Jump to category">
+  <div class="container">
+    <div class="pill-list" role="navigation" aria-label="Prompt categories">
+      <a class="pill" href="#coding-debugging">Coding &amp; Debugging</a>
+      <a class="pill" href="#writing-content">Writing &amp; Content</a>
+      <a class="pill" href="#research-learning">Research &amp; Learning</a>
+      <a class="pill" href="#business-productivity">Business &amp; Productivity</a>
+      <a class="pill" href="#creative-projects">Creative Projects</a>
+      <a class="pill" href="#life-admin-planning">Life Admin &amp; Planning</a>
+    </div>
+  </div>
+</section>
+<section class="section" id="coding-debugging">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Coding &amp; Debugging</span><h2>Coding &amp; Debugging prompts.</h2></div></div>
+    <div class="grid grid-2">
+      <article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp1">Copy</button><h3>Debug my code step-by-step</h3><p class="muted byline">By clara.codes</p><pre id="cp1"><code>I'm getting an error in my code. Before you fix it, please:
+1. Ask me clarifying questions about what the code should do
+2. Ask me to describe the exact error message and when it occurs
+3. Ask what I've already tried
+
+Once I answer, walk me through the debugging process by:
+- Identifying the likely root cause
+- Showing me how to verify each hypothesis
+- Providing the fix with an explanation of why it works
+
+Make sure I understand the fix, not just copy-paste it.</code></pre><p class="note why-note"><em>Why this works: Asks Claude to ask clarifying questions first; requests step-by-step reasoning and educational explanation.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp2">Copy</button><h3>Refactor this code for readability</h3><p class="muted byline">By buildwithmara</p><pre id="cp2"><code>Please refactor this code with these priorities (in order):
+1. Readability: use clear variable names and small functions
+2. Maintainability: reduce repetition and make it easy to modify
+3. Performance: only optimize if it doesn't harm #1 or #2
+
+For each change you make:
+- Explain why it's better
+- Show before/after side-by-side
+- Flag any tradeoffs
+
+Code to refactor:
+[PASTE CODE]
+
+What would a senior engineer do differently?</code></pre><p class="note why-note"><em>Why this works: Specifies ranked priorities; requests before/after comparison; asks Claude to show reasoning before concluding.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp3">Copy</button><h3>Explain this algorithm in plain English</h3><p class="muted byline">By prompt_prashant</p><pre id="cp3"><code>I need to understand how this algorithm works. Please:
+
+1. First, ask me: what's your background? (e.g., beginner, 2 years experience, etc.)
+2. Ask: are you more visual or prefer written explanation?
+3. Then explain the algorithm at my level:
+   - Start with the high-level idea in one sentence
+   - Break down each step
+   - Show a concrete example with small numbers
+   - Point out edge cases
+   - Mention when you'd actually use this
+
+Algorithm:
+[PASTE CODE]
+
+Make it click for me.</code></pre><p class="note why-note"><em>Why this works: Adaptive difficulty via clarifying questions; concrete examples; shows practical application context.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp4">Copy</button><h3>Code review: catch my mistakes</h3><p class="muted byline">By nightowl_dev</p><pre id="cp4"><code>Please review this code as if you're a strict senior engineer. Focus on:
+
+1. **Bugs** (actual logic errors or crashes)
+2. **Security** (auth, injection, exposure, validation)
+3. **Performance** (obvious inefficiencies)
+4. **Style** (conventions, readability)
+
+For each issue:
+- Rate it: Critical / High / Medium / Nice-to-have
+- Show the problematic line(s)
+- Explain the risk or why it's wrong
+- Provide the fix or better pattern
+
+Finally, list 2-3 things the code does well.
+
+Code:
+[PASTE CODE]</code></pre><p class="note why-note"><em>Why this works: Structured severity ratings and prioritized output; balances critique with encouragement.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp5">Copy</button><h3>Generate test cases for edge cases</h3><p class="muted byline">By j_code</p><pre id="cp5"><code>I have a function that I need to test thoroughly. Help me create a test suite:
+
+1. First, I'll describe what the function does:
+[DESCRIBE FUNCTION]
+
+2. For each category below, brainstorm test cases and tell me why they matter:
+   - Happy path (normal usage)
+   - Boundary cases (edge of valid input)
+   - Invalid inputs (things that should fail gracefully)
+   - Empty/null cases
+   - Performance edge cases (very large inputs)
+
+3. Then write actual test code using [TEST FRAMEWORK] format
+4. Explain which tests are critical (must pass) vs. nice-to-have
+
+What edge cases am I missing?</code></pre><p class="note why-note"><em>Why this works: Asks Claude to brainstorm before generating code; categorizes test importance; requests reasoning.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp6">Copy</button><h3>Explain this error message</h3><p class="muted byline">By dev_atlas</p><pre id="cp6"><code>I'm getting this error and I don't understand it:
+
+[PASTE FULL ERROR MESSAGE AND STACK TRACE]
+
+Please:
+1. Translate the error into plain English (what actually failed?)
+2. List the 3 most common causes for this error
+3. For each cause, tell me how to check if it's the problem
+4. Suggest fixes in order of likelihood
+5. Ask me clarifying questions to narrow it down further
+
+Don't just tell me the fix—help me understand what went wrong so I spot it faster next time.</code></pre><p class="note why-note"><em>Why this works: Breaks down error diagnosis into testable hypotheses; educational focus; asks clarifying questions.</em></p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="writing-content">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Writing &amp; Content</span><h2>Writing &amp; Content prompts.</h2></div></div>
+    <div class="grid grid-2">
+      <article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp7">Copy</button><h3>Write with my voice, not yours</h3><p class="muted byline">By contentwriter_sam</p><pre id="cp7"><code>I'm writing about [TOPIC] for [AUDIENCE]. Before you write, please ask me:
+
+1. How would I describe my writing style? (casual, professional, punny, etc.)
+2. What tone do I want? (inspiring, practical, entertaining, etc.)
+3. Show me 2-3 sentences in the style you think I mean—let me correct you
+
+Once we're aligned, write the piece:
+[DESCRIBE WHAT YOU WANT WRITTEN]
+
+After you write it:
+- Show me 3 alternative headlines with a one-line reason for each
+- Flag any phrases that feel clichÃ©
+- Ask me: what should the reader do or feel after reading this?</code></pre><p class="note why-note"><em>Why this works: Establishes voice through iterative feedback before full drafting; requests alternatives; checks intent alignment.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp8">Copy</button><h3>Blog post outline with story structure</h3><p class="muted byline">By writer_jess</p><pre id="cp8"><code>Help me outline a blog post about [TOPIC]. I want it structured like this:
+
+1. Hook (make them curious)
+2. Problem (why should they care?)
+3. Story or example (make it real)
+4. Solution/advice (the actual value)
+5. Action step (what to do now)
+
+Before you outline:
+- Ask me: what's the one insight I want readers to take away?
+- Ask: what mistake do I want them to avoid?
+- Ask: who's my reader? (their pain, their goal)
+
+Then give me:
+- Full outline with talking points
+- A "hook" lead paragraph to grab attention
+- 2-3 compelling section headers
+- A call-to-action suggestion</code></pre><p class="note why-note"><em>Why this works: Narrative structure with clarifying questions; requests compelling alternatives; aligns outcome expectations.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp9">Copy</button><h3>Edit for clarity, not just grammar</h3><p class="muted byline">By edit_pro</p><pre id="cp9"><code>Please edit this for CLARITY and IMPACT, not just grammar:
+
+[PASTE TEXT]
+
+For each edit, explain:
+1. What was unclear or weak?
+2. Why my version didn't work
+3. What I can learn (so I write better next time)
+
+Then show me:
+- A full revised version
+- A version that's "punchy" (shorter, more impact)
+- Points where my original was actually strong and I should keep
+
+Finally, give me 3 principles I should remember when writing this type of content.</code></pre><p class="note why-note"><em>Why this works: Educational editing; shows learning principles; preserves strong original phrasing.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp10">Copy</button><h3>Adapt content for different platforms</h3><p class="muted byline">By social_maya</p><pre id="cp10"><code>I have one piece of content I want to repurpose across platforms. Here's the original:
+
+[PASTE CONTENT]
+
+Please adapt it for:
+1. **Email subject line** + 2-line preview
+2. **LinkedIn post** (professional, with engagement hook)
+3. **Twitter/X thread** (3-5 connected tweets)
+4. **TikTok script** (casual, short, energetic)
+5. **Newsletter summary** (teaser with link)
+
+For each, ask me first: what's your goal for that platform? (build followers, drive traffic, establish authority, etc.)
+
+Then show the adaptations and explain the 1-2 key changes you made for each platform.</code></pre><p class="note why-note"><em>Why this works: Audience-specific adaptation; asks intent before executing; explains platform-specific choices.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp11">Copy</button><h3>Generate headlines and subject lines</h3><p class="muted byline">By copywriter_alex</p><pre id="cp11"><code>I need compelling headlines for [TOPIC/OFFER]. Here's what I'm selling or promoting:
+
+[DESCRIBE CONTENT/OFFER]
+
+My audience is: [DESCRIBE AUDIENCE]
+
+Please generate 12 headline options. For each, label it with the technique:
+- Curiosity gap (makes them wonder)
+- Benefit/outcome (they get X)
+- Number/specific (80% of X, 5 reasons)
+- Urgency (time-limited, trending)
+- Negative/fear (avoid mistake X)
+- Question (makes them think)
+
+Then tell me:
+1. Which 3 feel strongest to you and why?
+2. Which would YOU click on?
+3. Which one contradicts the others (might test well)?
+4. Any I should avoid?</code></pre><p class="note why-note"><em>Why this works: Categorizes by technique; requests expert judgment; identifies outliers worth testing.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp12">Copy</button><h3>Write copy that sells without being sleazy</h3><p class="muted byline">By b2b_content</p><pre id="cp12"><code>Help me write copy for [PRODUCT/SERVICE] that actually persuades without feeling pushy.
+
+First, tell me:
+1. What's the real problem my customer has? (Dig deeper—not just the surface problem)
+2. What does solving it let them do, become, or avoid?
+3. Why is my solution better than alternatives?
+4. What's the one objection I need to overcome?
+
+Then write:
+- A landing page hero section (headline + subheading + single CTA)
+- A 3-paragraph customer-focused benefit section (focus on their outcome, not features)
+- An objection-handling paragraph (acknowledge the skepticism, then flip it)
+- A PS line that creates light urgency
+
+Make it feel authentic and helpful, not salesy.</code></pre><p class="note why-note"><em>Why this works: Starts with customer psychology before writing; clarifies real objections; explicitly avoids manipulation.</em></p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="research-learning">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Research &amp; Learning</span><h2>Research &amp; Learning prompts.</h2></div></div>
+    <div class="grid grid-2">
+      <article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp13">Copy</button><h3>Research a topic like a journalist</h3><p class="muted byline">By researchmind</p><pre id="cp13"><code>I need to research [TOPIC] thoroughly for [PURPOSE: article/decision/understanding]. Please:
+
+1. Before you start: ask me what I already know (so you don't repeat it)
+2. Ask: what angle matters most? (history, technical details, controversies, practical use, etc.)
+3. Ask: what would change my mind? (what evidence would convince me otherwise?)
+
+Then research by:
+- Summarizing the mainstream view
+- Identifying major disagreements or debates
+- Highlighting the most interesting or surprising finding
+- Noting where experts actually don't know
+- Suggesting 3-5 reliable sources I should read myself
+
+Finally:
+- Give me 5 thoughtful questions I should ask about this topic
+- Flag any assumptions I might unconsciously have
+- Tell me: if you had to change your mind about this, what would do it?</code></pre><p class="note why-note"><em>Why this works: Clarifies prior knowledge to avoid repetition; identifies genuine disagreements; suggests primary sources.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp14">Copy</button><h3>Learn a new skill with a structured plan</h3><p class="muted byline">By learning_path</p><pre id="cp14"><code>I want to learn [SKILL] because [REASON]. My background: [YOUR EXPERIENCE]. I have [TIME AVAILABLE] per week.
+
+Before you build a plan, ask me:
+1. What's a concrete thing you want to DO with this skill? (specific project, not just 'learn')
+2. By when do you need to be functional?
+3. Do you prefer learning from: practice, theory, examples, video, reading?
+
+Then create a step-by-step learning path:
+- Phase 1: Fundamentals (what's the minimum I need to know?)
+- Phase 2: Practice (3-5 concrete projects, in order of difficulty)
+- Phase 3: Mastery (how to get from good to great)
+
+For each phase:
+- Specific resources (books, courses, projects)
+- Time estimate
+- A mini-project to apply what I learned
+- How to know I'm ready for the next phase
+
+What are the 3 biggest mistakes beginners make in this skill?</code></pre><p class="note why-note"><em>Why this works: Ties learning to concrete application; asks preferences before planning; includes mini-projects; calls out common pitfalls.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp15">Copy</button><h3>Explain a complex topic simply</h3><p class="muted byline">By teach_me</p><pre id="cp15"><code>I don't understand [TOPIC/CONCEPT]. Please explain it to me like I'm [YOUR LEVEL: beginner/intermediate/expert in a different field].
+
+Use this structure:
+1. One-sentence summary (the core idea)
+2. A real-world analogy or story that makes it click
+3. Break down the key parts (what does each piece do?)
+4. A concrete example with numbers or specifics
+5. Why it matters (when/how do people actually use this?)
+6. Common misconceptions (what do people get wrong?)
+
+Then ask yourself: did I explain it in a way that builds understanding, or did I just use fancy words?
+
+Finally: what's the ONE question most beginners ask about this? (and answer it.)</code></pre><p class="note why-note"><em>Why this works: Adaptive complexity via leveling; analogy-based explanation; addresses misconceptions; shows practical relevance.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp16">Copy</button><h3>Compare options side-by-side objectively</h3><p class="muted byline">By compare_pros</p><pre id="cp16"><code>I'm choosing between [OPTION A], [OPTION B], and [OPTION C]. Help me decide objectively:
+
+First, tell me:
+1. What matters most for my decision? (price, quality, time, learning curve, etc.)
+2. Rank those criteria by importance
+3. What would make you pick each option? (what's the best-case for each?)
+
+Then create a comparison:
+- Build a scorecard rating each option on your criteria (1-10, with reasoning)
+- For each criteria: what's the actual difference, not marketing speak?
+- List the biggest pro AND con for each option
+- Identify which criteria might not matter as much as you think
+- Tell me: which option am I unconsciously already leaning toward?
+
+Finally: if you could only pick one factor, which would most impact your happiness with this choice?</code></pre><p class="note why-note"><em>Why this works: Ranks criteria by importance before comparing; reveals unconscious bias; focuses on actual differences.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp17">Copy</button><h3>Fact-check a claim rigorously</h3><p class="muted byline">By skeptic_press</p><pre id="cp17"><code>Someone told me [CLAIM]. I want to know if it's true. Before you check, help me:
+
+1. Rephrase the claim clearly—what exactly are we testing?
+2. Break down the claim into sub-claims (if it's complex)
+3. Ask: what would prove this true? What would prove it false?
+4. What's the most likely reason people believe this? (is there a grain of truth?)
+
+Then research:
+- What's the mainstream expert consensus?
+- What are the strongest arguments for AND against?
+- What does the actual research show? (studies, data, not just opinions)
+- What are the common misconceptions or misquotes?
+- Confidence level: how sure can we be?
+
+Finally:
+- Tell me the truth, the caveats, and the nuance
+- Suggest one high-quality source I should read to verify myself</code></pre><p class="note why-note"><em>Why this works: Defines testable claims before researching; seeks strongest arguments for both sides; includes confidence rating.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp18">Copy</button><h3>Create a study guide for an exam</h3><p class="muted byline">By study_strategist</p><pre id="cp18"><code>I have an exam on [SUBJECT] in [TIME AVAILABLE]. Please help me study strategically:
+
+1. First, ask: what type of exam? (multiple choice, essay, practical, mixed?)
+2. Ask: which topics stress you out? Which do you already know?
+3. Ask: what's your learning style? (visual, reading, practice problems, teaching others?)
+
+Then build a study plan:
+- Priority topics (hardest, highest-weighted, most likely to appear)
+- A study schedule for the time you have (daily breakdown)
+- 10 practice questions that test the hard stuff (with explanations)
+- Common mistakes to watch out for
+- A 1-page cheat sheet of essential formulas/concepts
+- 3 ways to quiz yourself before test day
+
+Finally: what's the most important concept to nail down first, and why?</code></pre><p class="note why-note"><em>Why this works: Prioritizes learning based on difficulty and test weight; tailors to learning style; includes metacognitive strategies.</em></p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="business-productivity">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Business &amp; Productivity</span><h2>Business &amp; Productivity prompts.</h2></div></div>
+    <div class="grid grid-2">
+      <article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp19">Copy</button><h3>Validate a business idea quickly</h3><p class="muted byline">By founder_dev</p><pre id="cp19"><code>I have a business idea: [DESCRIBE IDEA AND TARGET CUSTOMER]
+
+Before you critique it, tell me:
+1. Do you think I'm onto something?
+2. What assumptions am I making that could be wrong?
+3. What's the biggest risk that could kill this?
+
+Then help me validate it:
+- Who exactly is the customer? (be specific, not "everyone")
+- What's their actual problem? (not what I think it is—what will they pay to solve?)
+- Who's already solving this? (competitors, partial solutions)
+- What would I need to charge to make this viable?
+- What's the simplest way to test if customers actually want this? (in 1-2 weeks)
+- Red flags I should watch out for
+
+Finally: is this worth my time, and what should I do next week?</code></pre><p class="note why-note"><em>Why this works: Asks for honest feedback first; identifies untested assumptions; focuses on customer validation over perfection.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp20">Copy</button><h3>Create a product roadmap from feedback</h3><p class="muted byline">By product_roadmap</p><pre id="cp20"><code>I've collected customer feedback on my product [DESCRIBE PRODUCT]. Here's what they told me:
+
+[PASTE FEEDBACK: complaints, feature requests, compliments]
+
+Please:
+1. Group the feedback into themes (what patterns do you see?)
+2. Separate signal from noise (what's one person's preference vs. real problems?)
+3. Rate each theme by: how many customers mentioned it, how urgent is it, how hard to build?
+
+Then create a roadmap:
+- Next 1-3 months: Quick wins (easy to build, high impact)
+- Next 3-6 months: Main features (harder, but customers want them)
+- Future: Nice-to-haves (cool, but not urgent)
+
+For each item, explain:
+- Why it matters (what problem does it solve?)
+- How you'll measure success
+- What could go wrong
+
+Finally: which one thing should I prioritize first, and why?</code></pre><p class="note why-note"><em>Why this works: Separates signal from noise; rates priorities by impact and effort; ties features to customer problems.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp21">Copy</button><h3>Write a business email that gets response</h3><p class="muted byline">By email_strategist</p><pre id="cp21"><code>I need to email [RECIPIENT] about [PURPOSE]. Here's what I know about them:
+[YOUR CONTEXT]
+
+Before you write, help me think through:
+1. What do THEY care about? (their goals, not mine)
+2. Why should they care about what I'm saying?
+3. What's the one thing I want them to do?
+4. What's my biggest risk? (they ignore it, they say no, they misunderstand)
+
+Then write:
+- Subject line (no "Quick question"—make it specific)
+- Personalized opening (not generic)
+- 1-2 paragraph body (show you understand their world)
+- Clear, single ask (easy to say yes to)
+- A light next step (what happens if they don't reply?)
+- Closing that's warm, not stiff
+
+Before I send it:
+- Read it from their perspective—would you respond?
+- Point out anything that sounds desperate or salesy
+- Suggest 1-2 alternative subject lines to test</code></pre><p class="note why-note"><em>Why this works: Prioritizes recipient&#x27;s perspective; focuses on single ask; tests tone before sending; suggests alternatives.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp22">Copy</button><h3>Plan a project with real deadlines</h3><p class="muted byline">By pm_clarity</p><pre id="cp22"><code>I need to plan a project: [DESCRIBE PROJECT AND DEADLINE]
+
+Help me break it down:
+1. Ask: what does "done" look like? (be specific—how do we know we succeeded?)
+2. Ask: what could derail this? (what risks should I plan for?)
+3. Ask: who do I need to depend on? (and are they reliable?)
+
+Then build the plan:
+- Main phases (break it into 3-5 chunks)
+- For each phase: tasks, who's responsible, realistic time estimate
+- Dependencies (what has to finish before the next thing starts?)
+- Buffer time (where could things slip?)
+- Weekly milestones (how do we know we're on track?)
+- Red flags to watch for
+
+Finally:
+- Timeline in calendar format (can we actually finish by the deadline?)
+- One thing I should do TODAY
+- When should we check in to see if we're on track?</code></pre><p class="note why-note"><em>Why this works: Defines success before planning; identifies risks and dependencies; includes buffer; suggests quick first step.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp23">Copy</button><h3>Analyze a meeting and make it better</h3><p class="muted byline">By meeting_optimizer</p><pre id="cp23"><code>We have a recurring meeting [DESCRIBE MEETING: attendees, length, purpose]. It feels like a time sink. Help me fix it:
+
+1. First, ask: what decision or outcome should this meeting produce?
+2. Ask: who actually needs to be there? (or are we just inviting everyone?)
+3. Ask: what would make you feel the time was well-spent?
+
+Then analyze:
+- Is this meeting necessary, or can we communicate async?
+- If we keep it: ideal length, attendees, and agenda
+- Structure: how should we use the time to get real answers?
+- Decisions: what should we decide in the meeting vs. beforehand?
+- Follow-up: how do we avoid rehashing the same ground next meeting?
+
+Finally: draft a new meeting description that shows the real purpose.
+What's the test to know if this meeting is working?</code></pre><p class="note why-note"><em>Why this works: Questions necessity before optimizing; right-sizes attendees and time; focuses on outcomes over activity.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp24">Copy</button><h3>Pitch your idea in 1 minute</h3><p class="muted byline">By pitch_coach</p><pre id="cp24"><code>I'm pitching [MY IDEA/PRODUCT/SERVICE] to [WHO: investor, customer, partner] for [GOAL]. My pitch is too long.
+
+Please:
+1. Ask: what's the ONE thing they need to understand about your idea?
+2. Ask: what would make them say yes right now?
+3. Ask: what's the biggest doubt they'll have?
+
+Then build a 1-minute pitch:
+- Hook (1 sentence that makes them lean in)
+- Problem (why this matters)
+- Solution (what you're doing—2 sentences max)
+- Why you (why you, why now)
+- Ask (what do you want from them?)
+
+Make it:
+- Specific (numbers, not vague)
+- Memorable (one visual/story/stat)
+- Confident (not tentative)
+- Conversational (like you're talking to a friend, not presenting)
+
+Then give me 3 versions (ambitious, balanced, conservative) and tell me which would work best.</code></pre><p class="note why-note"><em>Why this works: Clarifies core message before drafting; multiple versions for different audiences; emphasizes authenticity.</em></p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="creative-projects">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Creative Projects</span><h2>Creative Projects prompts.</h2></div></div>
+    <div class="grid grid-2">
+      <article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp25">Copy</button><h3>Brainstorm ideas with structured creativity</h3><p class="muted byline">By creative_spark</p><pre id="cp25"><code>I'm stuck trying to come up with ideas for [PROJECT: story, game, business, campaign, etc.]. Here's the context:
+
+[DESCRIBE CONSTRAINTS: budget, audience, format, tone, deadline]
+
+Before we brainstorm, help me think:
+1. What if I inverted the obvious approach? (opposite of what everyone does)
+2. What's a weird combination of two unrelated things?
+3. What would [different person/culture/era] do with this?
+
+Then generate:
+- 20 diverse ideas (weird, safe, bold, practical, fun, serious)
+- For each idea: one sentence pitch, why it could work, why it might fail
+- Highlight the 3-5 ideas you'd actually pursue
+- For each top idea: what would make it even better?
+
+Finally:
+- Which idea scares you a little? (often the best signal)
+- What's the fastest way to test the top 3?
+- What assumption is each idea built on?</code></pre><p class="note why-note"><em>Why this works: Structures ideation with creative constraints; generates diverse options; flags assumptions and risks.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp26">Copy</button><h3>Write a story with character depth</h3><p class="muted byline">By storyteller_kit</p><pre id="cp26"><code>I'm writing a story about [PROTAGONIST] who [MAIN CONFLICT]. Here's what I have so far:
+
+[DESCRIBE WHAT YOU'VE WRITTEN]
+
+Before I continue, help me build the character:
+1. What does your protagonist WANT vs. what do they NEED? (different things)
+2. What's their biggest fear, and how does this story touch that?
+3. What's a small habit or quirk that makes them real?
+4. Who would they be if everything went wrong?
+
+Then assess the conflict:
+- Is it personal (internal struggle), interpersonal (with someone), or external (vs. the world)?
+- What's the real stake? (what could they lose?)
+- Is there a false solution they try first? (makes it more interesting)
+
+Finally:
+- Suggest a scene that reveals something about them without saying it outright
+- Identify where the emotional peak should happen
+- Ask: what's the moment where they change?</code></pre><p class="note why-note"><em>Why this works: Separates want from need; builds internal conflict; suggests showing over telling; marks emotional arc.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp27">Copy</button><h3>Design a world or setting that feels real</h3><p class="muted byline">By worldbuilder_ray</p><pre id="cp27"><code>I'm building a world/setting for [GENRE/PROJECT]. Here's the basic concept:
+
+[DESCRIBE YOUR WORLD]
+
+To make it feel real, let's answer:
+1. What's different about this world from ours? (magic, technology, culture, geography)
+2. How does that difference change daily life? (what do people do?)
+3. What are the rules? (what's possible, what's not?)
+4. Who has power, and why?
+
+Then build:
+- 3 specific locations (what makes each feel real? sights, sounds, conflicts)
+- Daily life details: how do people eat, work, socialize, relax?
+- One problem everyone in this world deals with
+- Visual reference images (style, color, architecture)
+- Internal logic: if X is true, what else must be true?
+
+Finally:
+- What's one small detail that would feel weird to an outsider but normal here?
+- What's the biggest assumption your world is built on?
+- How is this world a mirror of a real-world issue?</code></pre><p class="note why-note"><em>Why this works: Grounds abstract worldbuilding in concrete details; asks for logical consistency; ties to real-world themes.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp28">Copy</button><h3>Give creative feedback that helps</h3><p class="muted byline">By critique_coach</p><pre id="cp28"><code>I need feedback on [CREATIVE WORK: writing, design, music, etc.]. Here's what it is:
+
+[DESCRIBE OR PASTE YOUR WORK]
+
+Before you critique, understand my intent:
+1. What effect do I want it to have? (move people, entertain, inform, persuade?)
+2. What am I most uncertain about?
+3. Am I looking for: harsh honesty, encouragement, specific technical fixes?
+
+Then give feedback structured as:
+- What works really well? (be specific—what landed for you?)
+- Where does it lose you? (where do you need clarity, emotion, or interest?)
+- One thing I'd change: [specific suggestion with reasoning]
+- One question: [something that might unlock improvement]
+- Honest final thought: did it do what you intended?
+
+Finally: what's the smallest change that would have the biggest impact?</code></pre><p class="note why-note"><em>Why this works: Asks intent and preference before critiquing; balances honest criticism with specificity; suggests highest-leverage fix.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp29">Copy</button><h3>Develop a character voice or persona</h3><p class="muted byline">By voice_dev</p><pre id="cp29"><code>I'm creating a character [NAME, ROLE] for [PROJECT]. I want their voice to feel distinct and real.
+
+Help me define them:
+1. How would they describe themselves? (not the truth, what they THINK of themselves)
+2. What's their verbal tic? (word they overuse, speech pattern, accent flavor)
+3. What don't they talk about? (blind spots reveal character)
+4. Are they more formal or casual? Direct or indirect? Emotional or detached?
+
+Then:
+- Write 3 pieces of dialogue: angry, amused, vulnerable
+- Write an internal monologue about [their conflict]
+- Write how they'd explain their job to a kid
+- Identify 2 words or phrases that are "theirs"
+
+Finally:
+- Read it out loud—does it feel natural or forced?
+- Would you recognize this character by voice alone?
+- What's one thing that surprised you about how they'd sound?</code></pre><p class="note why-note"><em>Why this works: Develops voice through internal contradiction; includes verbal tics and blind spots; tests authenticity through performance.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp30">Copy</button><h3>Outline a creative project from concept to finish</h3><p class="muted byline">By create_plan</p><pre id="cp30"><code>I want to make [CREATIVE PROJECT: podcast, book, video series, game, etc.]. I have the core idea but need a roadmap:
+
+[DESCRIBE YOUR IDEA]
+
+Before I plan, tell me:
+1. Why does this idea matter to YOU?
+2. Who's your ideal audience, and what do they love?
+3. What's the hardest part you'll have to figure out?
+
+Then build the roadmap:
+- **Phase 1 (Research/Setup):** what do you need to learn or create before starting?
+- **Phase 2 (Creation):** break it into milestones (how many pieces, in what order?)
+- **Phase 3 (Polish/Release):** timeline and format
+- Resources needed (tools, people, money, time)
+- 3 ways it could fail—and how to catch the problem early
+
+For each phase:
+- One concrete thing to do THIS WEEK
+- How you'll know you're ready to move to the next phase
+
+Finally: what's the smallest version you could make to test the idea?</code></pre><p class="note why-note"><em>Why this works: Ties project to personal motivation; identifies hardest problem early; emphasizes MVP testing approach.</em></p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="life-admin-planning">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Life Admin &amp; Planning</span><h2>Life Admin &amp; Planning prompts.</h2></div></div>
+    <div class="grid grid-2">
+      <article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp31">Copy</button><h3>Make a major life decision</h3><p class="muted byline">By decision_maker</p><pre id="cp31"><code>I'm trying to decide between [OPTION A] and [OPTION B]. This decision [CONTEXT: big move, job change, relationship, investment, etc.].
+
+Before I decide, help me think clearly:
+1. What am I really afraid of? (fear often drives decisions more than logic)
+2. If I don't decide now, what happens? (sunk cost, time, regret?)
+3. In 5 years, which choice will I be happier about?
+
+Then analyze:
+- What do I know vs. what am I just assuming?
+- Which option would I choose if fear wasn't a factor?
+- Which option would I choose if money wasn't a factor?
+- What could I learn from choosing each path?
+- Is there a third option I haven't considered?
+
+Finally:
+- What's the decision point? (what would change my mind?)
+- If I choose A, what would need to be true for it to work out?
+- If I choose B, what would need to be true for it to work out?
+- What's my gut telling me? (separate from logic)
+
+Based on all this, what should I do?</code></pre><p class="note why-note"><em>Why this works: Separates fear from logic; identifies hidden assumptions; explores counterfactuals; includes gut check.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp32">Copy</button><h3>Plan a big project or trip</h3><p class="muted byline">By planner_sarah</p><pre id="cp32"><code>I'm planning [PROJECT/TRIP] for [TIME FRAME] with [CONSTRAINTS: budget, who's coming, must-dos].
+
+First, clarify with me:
+1. What does success look like? (specific outcomes, not vague vibes)
+2. What's the biggest risk or thing that could go wrong?
+3. What are you most excited about?
+
+Then build the plan:
+- **Phase 1 (Before):** what needs to happen 1-2 months out? (bookings, prep)
+- **Phase 2 (Execution):** day-by-day or week-by-week breakdown
+- **Phase 3 (Buffer/Wrap):** flex time, contingencies, follow-up
+
+For each phase:
+- Specific tasks with owners and deadlines
+- Budget breakdown (where could you overspend?)
+- Backup plan for the top 3 things that could fail
+
+Finally:
+- One thing I should do TODAY
+- What's the most common mistake people make with this kind of planning?
+- How will you know if it's going well?</code></pre><p class="note why-note"><em>Why this works: Defines success before planning; anticipates failure modes; breaks into phases with daily/weekly details.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp33">Copy</button><h3>Get unstuck from a difficult situation</h3><p class="muted byline">By coach_perspective</p><pre id="cp33"><code>I'm stuck in [SITUATION]. Here's what's happening:
+
+[DESCRIBE THE PROBLEM]
+
+Before you advise, help me understand:
+1. How long has this been going on?
+2. What have I already tried? (and why didn't it work?)
+3. What would change if nothing changed? (what's the cost of staying stuck?)
+4. What am I not saying out loud? (the real issue, not just the surface one)
+
+Then let's think through it:
+- What's in my control vs. what isn't?
+- What assumption am I making that could be wrong?
+- Who could help me that I haven't asked?
+- If I had no fear, what would I do?
+- What's the 1% improvement I could make this week?
+
+Finally:
+- What's actually blocking me: knowledge, courage, resources, or clarity?
+- What would I tell a friend in this situation?
+- Is the real problem what I think it is?</code></pre><p class="note why-note"><em>Why this works: Separates surface problem from root cause; asks what&#x27;s been tried; focuses on controllable actions.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp34">Copy</button><h3>Build a personal budget that sticks</h3><p class="muted byline">By budget_real</p><pre id="cp34"><code>I want to get my money under control. Here's my basic situation:
+- Monthly income: $X
+- Major expenses (rent, bills, debt): $X
+- Where the rest goes: [DESCRIBE]
+- Money goals: [DESCRIBE]
+
+Before we budget, ask me:
+1. What's causing money stress? (too much spent, not enough earned, both?)
+2. What do I spend money on without thinking about it?
+3. What's the one thing I'd save money for if I could?
+
+Then build:
+- Where every dollar goes (be specific, not vague categories)
+- "Free money" (expenses I can cut without suffering)
+- Savings target (realistic, not fantasy)
+- Budget by category with: what I'm spending now vs. target
+- One thing I can do this week to save $X
+
+Finally:
+- How do I track this without obsessing?
+- What will make me actually stick to this?
+- When should I check in to see if it's working?</code></pre><p class="note why-note"><em>Why this works: Asks root cause before budgeting; identifies painless cuts; ties to personal goals; builds real accountability.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp35">Copy</button><h3>Design your ideal week</h3><p class="muted byline">By time_architect</p><pre id="cp35"><code>I want to design a week that actually works for me. Right now I feel: [HOW YOU FEEL: overwhelmed, bored, scattered, unmotivated].
+
+First, tell me:
+1. What's one activity that makes you feel alive?
+2. What's taking up time that doesn't feel worth it?
+3. What would you do more of if you could?
+
+Then map out an ideal week:
+- How many hours for work/obligations?
+- How many for focus/deep work? (when does your brain do its best work?)
+- How many for rest/fun/hobbies?
+- How many for relationships/social?
+- What time of day do you do each? (peak energy hours for peak tasks)
+
+Now make it realistic:
+- What can't change? (fixed commitments)
+- Where can you create 3-5 hours for something that matters?
+- What's one thing you should stop doing?
+
+Finally:
+- What's one week day that's completely negotiable?
+- If you actually lived this week, how would you feel?
+- What's the first change to make?</code></pre><p class="note why-note"><em>Why this works: Starts with values before scheduling; ties time to energy levels; identifies what to stop; tests sustainability.</em></p></article><article class="card prompt-card"><button class="copy-button" type="button" data-copy-target="#cp36">Copy</button><h3>Tackle a habit you want to change</h3><p class="muted byline">By habit_shift</p><pre id="cp36"><code>I want to change [HABIT: quit, start, do more/less]. Here's the situation:
+- How long has this been the pattern?
+- Why do you do this? (what need does it fill?)
+- What's the cost of not changing?
+
+Before you give advice, help me understand:
+1. When do you do this most? (time of day, trigger, emotion)
+2. What makes it hard to stop? (what's the real barrier?)
+3. What would make it easier? (environment, support, reward)
+
+Then design a change:
+- **Tiny first step:** what's 1% of the goal? (not the whole thing at once)
+- **Environment:** what needs to change so the new habit is easier?
+- **Trigger:** what's a cue that reminds you? (time, place, another habit)
+- **Reward:** what makes the new habit feel worth it?
+- **Tracking:** how will you know you did it? (simple, visible)
+
+Finally:
+- What's one week where you'll test this?
+- Who can help keep you honest?
+- When does this habit get easiest? (start there, not your hardest moment)</code></pre><p class="note why-note"><em>Why this works: Identifies the real trigger and need; starts with 1% change; ties environment to habit; suggests accountability.</em></p></article>
+    </div>
+  </div>
+</section>
+<section class="section section-alt" id="submit-prompt">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">Community</span><h2>Submit your own prompt.</h2></div>
+      <p>Share a prompt that worked well for you. Submissions are reviewed before they go live.</p>
+    </div>
+    <div id="prompt-submit-form" class="prompt-submit-wrap"></div>
+  </div>
+</section>
+<script src="/assets/js/submission-form.js" defer></script>
+<section class="section tight"><div class="container banner"><div><h2>Want a guided first project?</h2><p>Open Claude, paste the first prompt, and let it help you scope the smallest project worth shipping.</p></div><a class="button secondary" href="https://claude.ai/referral/A-PYPUgv_g?s=cowork&v=apps" target="_blank" rel="sponsored nofollow noopener noreferrer">Start in Claude<span aria-hidden="true"> ↗</span></a></div></section>
+
+</main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="/">
+          <img src="/assets/media/logo.svg" width="40" height="40" alt="First Week With Claude" decoding="async">
+          <span><strong>First Week With Claude</strong><small>A practical, independent 7-day coding sprint for new builders.</small></span>
+        </a>
+        <p class="muted">Independent educational site. Claude and Anthropic are trademarks of Anthropic, PBC. This site is not affiliated with, endorsed by, or sponsored by Anthropic.</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Site</h2>
+        <div class="footer-links"><a href="/pricing-and-plans.html">Plans</a>
+<a href="/first-week-checklist.html">Checklist</a>
+<a href="/first-week-pitfalls.html">Pitfalls</a>
+<a href="/resources.html">Sources</a>
+<a href="/marketing-kit.html">Marketing Kit</a>
+<a href="/disclosure.html">Affiliate Disclosure</a>
+<a href="/privacy.html">Privacy</a>
+<a href="/terms.html">Terms</a></div>
+      </div>
+      <div>
+        <h2 class="footer-heading">Referral note</h2>
+        <p class="muted">Some links are sponsored/referral links. Offer availability, plan pricing, billing, cancellation, and eligibility are controlled by Claude/Anthropic and can change.</p>
+        <a class="button secondary" href="https://claude.ai/referral/A-PYPUgv_g?s=cowork&v=apps" target="_blank" rel="sponsored nofollow noopener noreferrer">Try the referral link<span aria-hidden="true"> ↗</span></a>
+      </div>
+    </div>
+    <div class="container fineprint">© <span data-year>2026</span> First Week With Claude. Last content review: July 27, 2026.</div>
+  </footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
